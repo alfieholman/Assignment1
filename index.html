@@ -1,5 +1,66 @@
 <html>
+    <style>
+        
+        body
+        {
+            background-color: rgba(128, 128, 128, 0.493);
+        }
+
+        h1
+        {
+            text-align: center;
+            font-family: Georgia (serif);
+            color: goldenrod;
+            padding: 7.5px;
+            background-color: gray;
+        }
+        
+        p
+        {
+            font-size: 1.125em;
+        }
+
+        .column 
+        {
+            float: left;
+            width: 32%;
+            padding-top: 25px;
+        }
+
+        .row:after 
+        {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        @media screen and (max-width:600px)
+        {
+            .column 
+            {
+                width: 100%;
+            }
+        }
+
+    </style>
     <head>
-            this is a test to see if this works 
+        <h1>Assignment 1</h1>    
     </head>
+    <body>
+        <p>there are 3 different methods for accessing CSS these are Inline, Embedded and External bellow I will describe what they are and give some examples on them to make it easier to understand. </p>
+        <div class="row">
+            <div class="column">
+              <p>The first of the three is Inline this is what I considers the most simple of the three methods this uses the style attributes to edit one element in html this can do some simple things such as changing the colour of text, size of the text or making different columns like I have done here to separate the different ways of accessing  in html.</p>
+            </div>
+  
+            <div class="column">
+              <p> </p>
+            </div>
+  
+            <div class="column">
+              <p></p>
+            </div>
+  
+          </div>
+    </body>
 </html>
