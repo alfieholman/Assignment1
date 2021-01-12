@@ -14,7 +14,75 @@
             padding: 7.5px;
             background-color: gray;
         }
-        
+
+        .menu
+        {
+            overflow: hidden;
+            background-color: rgb(39, 39, 39);
+        }
+
+        .menu a 
+        {
+            float: left;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .dropdown 
+        {
+            float: left;
+            overflow: hidden;
+        }
+
+        .dropdown .dropbtn 
+        {
+            font-size: 1.125em;  
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+
+        .menu a:hover, .dropdown:hover .dropbtn
+        {
+            background-color: rgb(177, 0, 0);
+        }
+
+        .dropdown-content 
+        {
+            display: none;
+            position: absolute;
+            background-color: rgb(39, 39, 39);
+            min-width: 160px;
+            
+        }
+
+        .dropdown-content a 
+        {
+            float: none;
+            color: rgb(255, 255, 255);
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown-content a:hover
+        {
+            background-color: rgb(177, 0, 0);
+        }
+
+        .dropdown:hover .dropdown-content 
+        {
+            display: block;
+        }
+
         p
         {
             font-size: 1.125em;
@@ -47,6 +115,20 @@
         <h1>Assignment 1</h1>    
     </head>
     <body>
+
+        <div class="menu">
+            <a href="Testpage.html">test</a>
+            <a href="Testpage.html">test</a>
+            <div class="dropdown">
+              <button class="dropbtn">Dropdown</button>
+              <div class="dropdown-content">
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model">box model reference</a>
+                <a href="http://www.boogiejack.com/CSS_2.html#:~:text=Embedded%20styles%20are%20set%20in,of%20an%20external%20style%20sheet.&text=An%20external%20style%20is%20simply,file%20containing%20your%20style%20rules.">types of CSS reference</a>
+                <a href="https://www.bitdegree.org/learn/internal-css">CSS examples image source</a>
+              </div>
+            </div> 
+          </div>
+            
         <h2>Different ways of implementing CSS</h2>
         <p>there are 3 different methods for accessing CSS these are Inline, Embedded and External bellow I will describe what they are and give some examples on them to make it easier to understand. </p>
         <div class="row">
